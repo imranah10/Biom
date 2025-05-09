@@ -60,7 +60,7 @@ export const Navbar = () => {
 
         {/* Desktop Button */}
         <div className="hidden lg:block">
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-5 py-2 rounded-lg shadow-md transition duration-300">
+          <button className="bg-yellow-400 hover:bg-yellow-500 border border-transparent hover:border-black text-black font-semibold px-5 py-2 rounded-lg shadow-md transition duration-300">
             Apply Loan
           </button>
         </div>

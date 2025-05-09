@@ -124,7 +124,7 @@ function Contact() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full rounded-md bg-yellow-600 hover:bg-yellow-500 text-white font-semibold px-4 py-2 transition border border-transparent hover:border-indigo-700"
+              className="w-full rounded-md bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-4 py-2 transition border border-transparent hover:border-black"
             >
               Submit
             </button>

@@ -30,7 +30,7 @@ function Footer() {
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             {/* About Us */}
             <div>
-              <h2 className="mb-6 text-sm font-semibold  uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold  uppercase text-yellow-600">
                 About Us
               </h2>
               <ul className="text-white dark:text-gray-400 font-medium">
@@ -68,7 +68,7 @@ function Footer() {
 
             {/* Follow Us */}
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-yellow-600">
                 Follow us
               </h2>
               <ul className="text-white dark:text-gray-400 font-medium">
@@ -109,7 +109,7 @@ function Footer() {
 
             {/* Legal */}
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-yellow-600">
                 Legal
               </h2>
               <ul className="text-white dark:text-gray-400 font-medium">
