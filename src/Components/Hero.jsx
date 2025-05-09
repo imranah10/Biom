@@ -87,62 +87,62 @@ export const Hero = () => {
 
       {/* Modal */}
       {showModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 overflow-y-auto py-10">
-          <div className="bg-white rounded-xl p-6 w-full max-w-4xl mx-4 relative">
-            <button
-              onClick={() => setShowModal(false)}
-              className="absolute top-3 right-3 text-2xl text-gray-600 hover:text-black"
-            >
-              &times;
-            </button>
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 overflow-y-auto py-10">
+    <div className="bg-white rounded-xl p-6 w-full max-w-4xl mx-4 relative max-h-[90vh] overflow-y-auto">
+      <button
+        onClick={() => setShowModal(false)}
+        className="absolute top-3 right-3 text-2xl text-gray-600 hover:text-black"
+      >
+        &times;
+      </button>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <h2 className="text-2xl font-bold text-center mb-4">
-                BI Rating Calculator
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {[
-                  { label: "Age", name: "age" },
-                  { label: "Business Experience (Years)", name: "experience" },
-                  { label: "GST Registered?", name: "gst" },
-                  { label: "GST Vintage (Years)", name: "gstVintage" },
-                  { label: "Turnover", name: "turnover" },
-                  { label: "Net Profit", name: "profit" },
-                  { label: "Capital Invested", name: "capital" },
-                  { label: "CIBIL Score", name: "cibil" },
-                  { label: "Number of Properties", name: "properties" },
-                  { label: "Number of Loans", name: "loans" },
-                  { label: "Cheque Bounce (Last 12 Months)", name: "bouncing12" },
-                  { label: "Cheque Bounce (Last 6 Months)", name: "bouncing6" },
-                ].map(({ label, name }) => (
-                  <div key={name}>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
-                      {label}
-                    </label>
-                    <input
-                      type="text"
-                      name={name}
-                      value={formData[name]}
-                      onChange={handleChange}
-                      className="w-full border rounded-md px-3 py-2"
-                      required
-                    />
-                  </div>
-                ))}
-              </div>
-
-              <div className="text-center">
-                <button
-                  type="submit"
-                  className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 font-semibold"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
+      <form onSubmit={handleSubmit} className="space-y-6">
+        <h2 className="text-2xl font-bold text-center mb-4">
+          BI Rating Calculator
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {[
+            { label: "Age", name: "age" },
+            { label: "Business Experience (Years)", name: "experience" },
+            { label: "GST Registered?", name: "gst" },
+            { label: "GST Vintage (Years)", name: "gstVintage" },
+            { label: "Turnover", name: "turnover" },
+            { label: "Net Profit", name: "profit" },
+            { label: "Capital Invested", name: "capital" },
+            { label: "CIBIL Score", name: "cibil" },
+            { label: "Number of Properties", name: "properties" },
+            { label: "Number of Loans", name: "loans" },
+            { label: "Cheque Bounce (Last 12 Months)", name: "bouncing12" },
+            { label: "Cheque Bounce (Last 6 Months)", name: "bouncing6" },
+          ].map(({ label, name }) => (
+            <div key={name}>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                {label}
+              </label>
+              <input
+                type="text"
+                name={name}
+                value={formData[name]}
+                onChange={handleChange}
+                className="w-full border rounded-md px-3 py-2"
+                required
+              />
+            </div>
+          ))}
         </div>
-      )}
+
+        <div className="text-center">
+          <button
+            type="submit"
+            className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 font-semibold"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+)}
     </>
   );
 };
