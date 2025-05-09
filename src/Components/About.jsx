@@ -3,9 +3,9 @@ import { MapPin, Target, Eye, Briefcase, BadgeCheck, Lightbulb, UserCheck } from
 
 export default function About() {
   return (
-    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div className="min-h-screen py-12    px-4 sm:px-6   lg:px-8 max-w-7xl mx-auto">
       {/* About us  */}
-      <div className="rounded-2xl shadow-2xl overflow-hidden border">
+      <div className="rounded-2xl shadow-2xl overflow-hidden ">
         {/* Header */}
         <div className=" p-8 md:p-12 text-center relative bg-[#15201d]">
           <div className="relative z-10">
