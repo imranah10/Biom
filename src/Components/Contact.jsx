@@ -7,13 +7,13 @@ function Contact() {
     <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 py-16 bg-gradient-to-br from-white to-indigo-50">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
         {/* Contact Info Section */}
-        <div className="lg:w-1/2 flex flex-col gap-10">
+        <div className="lg:w-1/2 flex flex-col gap-14 p-18 bg-white shadow-lg">
           {/* Heading */}
           <div>
-            <h1 className="flex items-center gap-3 text-2xl font-bold text-[#15201d]">
+            <h1 className="flex items-center gap-3 text-xl font-semibold text-[#15201d]">
               <FaPhoneAlt /> Contact Us
             </h1>
-            <p className="mt-3 text-gray-700 text-base leading-relaxed">
+            <p className="text-gray-700 mt-2 leading-relaxed md:w-95 ">
               We’re here to help with all your loan and financial consultancy needs. 
               Reach out to us — our expert team will get back to you promptly.
             </p>

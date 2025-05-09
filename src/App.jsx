@@ -8,8 +8,6 @@ import About from './Components/About'
 import Blog from './Components/Pages/Blog'
 import Footer from './Components/Common/Footer'
 import HomeLoan from './Components/HomeLoan'
-
-
 export const App = () => {
   return (
     <>
