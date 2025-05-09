@@ -46,7 +46,7 @@ const Testimonials = () => {
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-yellow-600 mb-8">What Our Clients Say</h2>
 
-        <div className="relative">
+        <div className="relativer">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
@@ -54,7 +54,7 @@ const Testimonials = () => {
                 index === activeIndex ? 'opacity-100 relative' : 'opacity-0 absolute top-0 left-0 w-full'
               }`}
             >
-              <div className="bg-white p-6 rounded-2xl shadow-md mx-auto max-w-3xl text-center">
+              <div className=" bg-[#15201d] border-1 border-yellow-600 p-6 rounded-2xl shadow-md mx-auto max-w-3xl text-center">
                 {testimonial.comments.map((comment, i) => (
                   <div key={i} className="flex flex-col items-center mb-4">
                     <img
@@ -62,10 +62,10 @@ const Testimonials = () => {
                       alt={`Comment ${i}`}
                       className="w-20 h-20 rounded-full object-cover mb-3"
                     />
-                    <p className="text-gray-600 italic">"{comment.message}"</p>
+                    <p className="text-white italic">"{comment.message}"</p>
                   </div>
                 ))}
-                <h5 className="text-lg font-semibold italic text-gray-800">{testimonial.name}</h5>
+                <h5 className="text-lg font-semibold italic text-yellow-600">{testimonial.name}</h5>
               </div>
             </div>
           ))}

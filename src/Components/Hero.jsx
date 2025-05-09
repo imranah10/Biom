@@ -65,7 +65,7 @@ export const Hero = () => {
           ].map((src, i) => (
             <div key={i} className="relative">
               <img
-                className="h-[60vh] sm:h-[70vh] md:h-[90vh] w-full object-cover"
+                className="h-[50vh] sm:h-[60vh] md:h-[90vh] w-full object-cover"
                 src={src}
                 alt={`Slide ${i + 1}`}
               />

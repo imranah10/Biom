@@ -11,7 +11,7 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="bg-indigo-500 sticky top-0 z-50">
+    <header className="bg-[#121829] sticky top-0 z-50">
       <nav className="max-w-8xl mx-auto px-6 py-4 flex justify-between items-center relative">
         {/* Logo */}
         <div className="text-4xl font-extrabold bg-gradient-to-r from-red-600 via-red-500 to-yellow-400 bg-clip-text text-transparent tracking-wide">

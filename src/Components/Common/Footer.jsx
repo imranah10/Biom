@@ -9,7 +9,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-indigo-500">
+    <footer className="bg-[#121829]">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           {/* Logo Section */}

@@ -5,9 +5,9 @@ export default function About() {
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       {/* About us  */}
-      <div className="rounded-2xl shadow-2xl overflow-hidden">
+      <div className="rounded-2xl shadow-2xl overflow-hidden border">
         {/* Header */}
-        <div className="bg-indigo-500 p-8 md:p-12 text-center relative">
+        <div className=" p-8 md:p-12 text-center relative bg-[#15201d]">
           <div className="relative z-10">
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
               About Biom Business Consultants Pvt. Ltd.
@@ -39,7 +39,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="text-white bg-indigo-500 p-6 rounded-xl shadow-md border-l-4 border-yellow-300 hover:bg-blue-700 cursor-pointer transition transform duration-300 hover:scale-105">
+            <div className="text-white bg-[#15201d] p-6 rounded-xl shadow-md border-l-4 border-yellow-300 hover:bg-[#121829] cursor-pointer transition transform duration-300 hover:scale-105">
               <p>
                 With deep roots in the banking ecosystem and unmatched domain expertise, we bridge the gap between borrowers and lenders by offering seamless, reliable, and personalized loan facilitation services.
               </p>
@@ -51,7 +51,7 @@ export default function About() {
       {/* Our Mission & Vision */}
       <div className="mt-16 rounded-2xl shadow-2xl overflow-hidden">
         {/* Header */}
-        <div className="bg-indigo-500 p-8 md:p-12 text-center relative">
+        <div className=" p-8 md:p-12 text-center relative bg-[#15201d]">
           <div className="relative z-10">
             <div className="flex flex-col items-center justify-center mb-4">
               <Target className="w-12 h-12 text-yellow-300 mb-2" />

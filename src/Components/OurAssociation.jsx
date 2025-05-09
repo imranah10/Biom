@@ -46,7 +46,7 @@ const OurAssociation = () => {
     <div className="w-full px-4 md:px-8 lg:px-16 py-6">
         <h1 className="text-3xl font-bold text-center text-yellow-600 mb-8">Our Associations</h1>
       {association.length > 0 ? (
-        <Slider className=" p-6 bg-indigo-500 rounded-2xl shadow-2xl" {...sliderSettings}>
+        <Slider className=" p-6 bg-[#15201d] rounded-2xl shadow-2xl" {...sliderSettings}>
           {association.map((aso, idx) => (
             <div key={idx} className="px-2 transition duration-300 hover:scale-105 ">
               <img

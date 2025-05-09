@@ -10,8 +10,8 @@ function Contact() {
         <div className="lg:w-1/2 flex flex-col gap-10">
           {/* Heading */}
           <div>
-            <h1 className="flex items-center gap-3 text-2xl font-bold text-indigo-700">
-              <FaPhoneAlt className="text-indigo-600" /> Contact Us
+            <h1 className="flex items-center gap-3 text-2xl font-bold text-[#15201d]">
+              <FaPhoneAlt /> Contact Us
             </h1>
             <p className="mt-3 text-gray-700 text-base leading-relaxed">
               We’re here to help with all your loan and financial consultancy needs. 
@@ -21,8 +21,8 @@ function Contact() {
 
           {/* Office Address */}
           <div>
-            <h2 className="flex items-center gap-3 text-xl font-semibold text-indigo-700">
-              <PiBuildingOfficeLight className="text-indigo-600" /> Office Address
+            <h2 className="flex items-center gap-3 text-xl font-semibold text-[#15201d]">
+              <PiBuildingOfficeLight /> Office Address
             </h2>
             <p className="text-gray-700 mt-2 leading-relaxed">
               <span className="font-medium">Biom Business Consultants Pvt. Ltd.</span><br />
@@ -33,12 +33,12 @@ function Contact() {
 
           {/* Contact Methods */}
           <div>
-            <h2 className="text-xl font-semibold text-indigo-700 mb-3">📱 Phone & Email</h2>
+            <h2 className="text-xl font-semibold text-[#15201d] mb-3">📱 Phone & Email</h2>
             <p className="flex items-center gap-3 text-gray-700 mb-2">
-              <FaPhoneAlt className="text-indigo-600" /> +91 99883 14040
+              <FaPhoneAlt className="text-[#15201d]" /> +91 99883 14040
             </p>
             <p className="flex items-center gap-3 text-gray-700">
-              <FaEnvelope className="text-indigo-600" /> bbc.businessconsultants@gmail.com
+              <FaEnvelope className="text-[#15201d]" /> bbc.businessconsultants@gmail.com
             </p>
           </div>
         </div>
@@ -124,7 +124,7 @@ function Contact() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full rounded-md bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 transition border border-transparent hover:border-indigo-700"
+              className="w-full rounded-md bg-yellow-600 hover:bg-yellow-500 text-white font-semibold px-4 py-2 transition border border-transparent hover:border-indigo-700"
             >
               Submit
             </button>

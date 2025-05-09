@@ -47,19 +47,19 @@ const Blog = () => {
       <section className="py-16 px-4 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8">
           {blogs.map((post, index) => (
-            <div key={index} className="bg-white rounded-lg shadow hover:shadow-lg transition">
+            <div key={index} className="border bg-[#15201d] rounded-lg shadow hover:shadow-lg transition">
               <img
                 src={post.img}
                 alt={post.title}
                 className="w-full h-48 object-cover rounded-t-lg"
               />
-              <div className="p-5">
+              <div className="p-5 text-white">
                 <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-white mb-4">
                   {post.desc.length > 100 ? post.desc.substring(0, 100) + "..." : post.desc}
                 </p>
                 <button
-                  className="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600"
+                  className="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-500"
                   onClick={() => openModal(post)}
                 >
                   Read More
