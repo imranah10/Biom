@@ -34,7 +34,7 @@ export const Navbar = () => {
             </button>
             {showDropdown && (
               <div className="absolute left-0 mt-2 bg-white text-black rounded-lg shadow-lg w-48 z-50">
-                <Link to="/services/loan-consulting" className="block px-4 py-2 hover:bg-gray-100">
+                <Link to="/homeloan" className="block px-4 py-2 hover:bg-gray-100">
                   Home Loan
                 </Link>
                 <Link to="/services/documentation" className="block px-4 py-2 hover:bg-gray-100">
@@ -120,7 +120,7 @@ export const Navbar = () => {
                 </button>
                 {showDropdown && (
                   <div className="mt-2 bg-white text-black rounded-lg shadow-lg w-full">
-                    <Link to="/services/loan-consulting" onClick={closeMenu} className="block px-4 py-2 hover:bg-gray-100">
+                    <Link to="/homeloan" onClick={closeMenu} className="block px-4 py-2 hover:bg-gray-100">
                       Home Loan
                     </Link>
                     <Link to="/services/documentation" onClick={closeMenu} className="block px-4 py-2 hover:bg-gray-100">
