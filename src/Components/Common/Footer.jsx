@@ -3,184 +3,83 @@ import {
   FaFacebookF,
   FaDiscord,
   FaTwitter,
-  FaGithub,
-  FaDribbble,
+  FaYoutube,
+  FaInstagram
 } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-[#121829]">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between">
-          {/* Logo Section */}
-          <div className="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" className="flex items-center">
+    <footer className="bg-[#121829] text-white">
+      <div className="max-w-screen-xl mx-auto px-4 py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Logo & Name */}
+          <div>
+            <a href="#" className="flex items-center mb-4">
               <img
                 src="https://flowbite.com/docs/images/logo.svg"
-                className="h-8 me-3"
-                alt="FlowBite Logo"
+                alt="Logo"
+                className="h-8 mr-3"
               />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                ऋण Samadhan
-              </span>
+              <span className="text-2xl font-semibold">ऋण Samadhan</span>
             </a>
+            <p className="text-sm text-gray-400">
+              Your trusted partner for financial consultation and loan guidance.
+            </p>
           </div>
 
-          {/* Links Section */}
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            {/* About Us */}
-            <div>
-              <h2 className="mb-6 text-sm font-semibold  uppercase text-yellow-600">
-                About Us
-              </h2>
-              <ul className="text-white dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">
-                    About Samadhan
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline"
-                  >
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline"
-                  >
-                    How to get loan
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline"
-                  >
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </div>
+          {/* About Us */}
+          <div>
+            <h2 className="mb-4 text-sm font-semibold uppercase text-yellow-500">
+              About Us
+            </h2>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#" className="hover:underline">About Samadhan</a></li>
+              <li><a href="#" className="hover:underline">FAQ</a></li>
+              <li><a href="#" className="hover:underline">How to get loan</a></li>
+              <li><a href="#" className="hover:underline">Contact Us</a></li>
+            </ul>
+          </div>
 
-            {/* Follow Us */}
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-yellow-600">
-                Follow us
-              </h2>
-              <ul className="text-white dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <a
-                    href="https://github.com/themesberg/flowbite"
-                    className="hover:underline"
-                  >
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
-                    Youtube
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
-                    Facebook
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
-                    Twitter
-                  </a>
-                </li>
-              </ul>
-            </div>
+          {/* Follow Us */}
+          <div>
+            <h2 className="mb-4 text-sm font-semibold uppercase text-yellow-500">
+              Follow Us
+            </h2>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#" className="hover:underline">Instagram</a></li>
+              <li><a href="#" className="hover:underline">Youtube</a></li>
+              <li><a href="#" className="hover:underline">Facebook</a></li>
+              <li><a href="#" className="hover:underline">Twitter</a></li>
+            </ul>
+          </div>
 
-            {/* Legal */}
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-yellow-600">
-                Legal
-              </h2>
-              <ul className="text-white dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Terms &amp; Conditions
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Refund Policy
-                  </a>
-                </li>
-              </ul>
-            </div>
+          {/* Legal */}
+          <div>
+            <h2 className="mb-4 text-sm font-semibold uppercase text-yellow-500">
+              Legal
+            </h2>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#" className="hover:underline">Privacy Policy</a></li>
+              <li><a href="#" className="hover:underline">Terms & Conditions</a></li>
+              <li><a href="#" className="hover:underline">Refund Policy</a></li>
+            </ul>
           </div>
         </div>
 
-        <hr className="my-6 border-yellow-500 sm:mx-auto lg:my-8" />
+        <hr className="my-6 border-yellow-600" />
 
-        {/* Footer Bottom Section */}
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-100 sm:text-center dark:text-gray-400">
-            © {new Date().getFullYear()}{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
-              ऋण Samadhan
-            </a>
-            . All rights reserved.
+        {/* Bottom Section */}
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <span className="text-sm text-gray-400">
+            © {new Date().getFullYear()} <span className="text-white font-medium">ऋण Samadhan</span>. All rights reserved.
           </span>
 
-          <div className="flex mt-4 sm:justify-center sm:mt-0 space-x-5">
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
-              <FaFacebookF className="w-4 h-4" />
-              <span className="sr-only">Facebook page</span>
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
-              <FaDiscord className="w-4 h-4" />
-              <span className="sr-only">Discord community</span>
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
-              <FaTwitter className="w-4 h-4" />
-              <span className="sr-only">Twitter page</span>
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
-              <FaGithub className="w-4 h-4" />
-              <span className="sr-only">GitHub account</span>
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
-              <FaDribbble className="w-4 h-4" />
-              <span className="sr-only">Dribbble account</span>
-            </a>
+          <div className="flex space-x-4 mt-4 md:mt-0">
+            <a href="#" className="hover:text-yellow-400"><FaFacebookF /></a>
+            <a href="#" className="hover:text-yellow-400"><FaDiscord /></a>
+            <a href="#" className="hover:text-yellow-400"><FaTwitter /></a>
+            <a href="#" className="hover:text-yellow-400"><FaInstagram /></a>
+            <a href="#" className="hover:text-yellow-400"><FaYoutube /></a>
           </div>
         </div>
       </div>
