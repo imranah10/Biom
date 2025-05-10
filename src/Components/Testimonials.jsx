@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const testimonials = [
   {
@@ -33,28 +33,31 @@ const testimonials = [
 const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const handlePrev = () => {
-    setActiveIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
-  };
+  // Automatic slide every 2 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 2000);
 
-  const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-  };
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
 
   return (
     <div className="bg-gray-100 py-12">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-yellow-600 mb-8">What Our Clients Say</h2>
+        <h2 className="text-3xl font-bold text-center text-yellow-600 mb-8">
+          What Our Clients Say
+        </h2>
 
-        <div className="relativer">
+        <div className="relative">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className={`transition-opacity duration-500 ease-in-out ${
+              className={`transition-opacity duration-700 ease-in-out ${
                 index === activeIndex ? 'opacity-100 relative' : 'opacity-0 absolute top-0 left-0 w-full'
               }`}
             >
-              <div className=" bg-[#15201d] border-1 border-yellow-600 p-6 rounded-2xl shadow-md mx-auto max-w-3xl text-center">
+              <div className="bg-[#15201d] border border-yellow-600 p-6 rounded-2xl shadow-md mx-auto max-w-3xl text-center">
                 {testimonial.comments.map((comment, i) => (
                   <div key={i} className="flex flex-col items-center mb-4">
                     <img
@@ -69,21 +72,6 @@ const Testimonials = () => {
               </div>
             </div>
           ))}
-
-          <div className="flex justify-center mt-6 gap-4">
-            <button
-              onClick={handlePrev}
-              className="px-4 py-2 rounded-full bg-gray-300 hover:bg-gray-400 text-gray-800 font-medium"
-            >
-              Prev
-            </button>
-            <button
-              onClick={handleNext}
-              className="px-4 py-2 rounded-full bg-gray-300 hover:bg-gray-400 text-gray-800 font-medium"
-            >
-              Next
-            </button>
-          </div>
         </div>
       </div>
     </div>

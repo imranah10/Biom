@@ -1,7 +1,6 @@
 import React from "react";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { PiBuildingOfficeLight } from "react-icons/pi";
-import { BiLogoGmail } from "react-icons/bi";
 
 function Contact() {
   return (
