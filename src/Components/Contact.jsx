@@ -15,8 +15,8 @@ function Contact() {
             </h1>
             <p className="text-gray-700 mt-2 leading-relaxed md:w-95 ">
               We’re here to help with all your loan and financial consultancy needs. 
-              Reach out to us — our expert team will get back to you promptly.
-            </p>
+              Reach out to us — our expert team will get back to you promptly.-
+            </p>  
           </div>
 
           {/* Office Address */}
@@ -37,8 +37,9 @@ function Contact() {
             <p className="flex items-center gap-3 text-gray-700 mb-2">
               <FaPhoneAlt className="text-[#15201d]" /> +91 99883 14040
             </p>
-            <p className="flex items-center gap-3 text-gray-700">
-              <FaEnvelope className="text-[#15201d]" /> bbc.businessconsultants@gmail.com
+            <p className="flex items-center gap-3 text-gray-700 text-sm sm:text-base">
+              <FaEnvelope className="text-[#15201d]" />
+              <span className="break-words">bbc.businessconsultants@gmail.com</span>
             </p>
           </div>
         </div>
