@@ -46,7 +46,7 @@ const Testimonials = () => {
     <div className="bg-gray-100 py-12">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-yellow-600 mb-8">
-          What Our Clients Say
+        What our Client Say
         </h2>
 
         <div className="relative">
@@ -63,12 +63,12 @@ const Testimonials = () => {
                     <img
                       src={comment.image}
                       alt={`Comment ${i}`}
-                      className="w-20 h-20 rounded-full object-cover mb-3"
+                      className="w-20 h-20 rounded-full object-cover mb-3 bg-cover border-2 border-yellow-600"
                     />
-                    <p className="text-white italic">"{comment.message}"</p>
+                    <p className="text-white italic text-sm md:text-base">"{comment.message}"</p>
                   </div>
                 ))}
-                <h5 className="text-lg font-semibold italic text-yellow-600">{testimonial.name}</h5>
+                <h5 className="text-lg font-semibold italic text-yellow-600 mt-4">{testimonial.name}</h5>
               </div>
             </div>
           ))}

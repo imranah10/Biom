@@ -76,7 +76,7 @@ export const Hero = () => {
       </div>
 
       {/* Calculator Button */}
-      <div className="flex items-center justify-center py-5 bg-gray-100">
+      <div className="flex items-center justify-center py-6 bg-gray-300">
         <button
           onClick={() => setShowModal(true)}
           className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition text-lg font-semibold"
