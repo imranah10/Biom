@@ -3,6 +3,7 @@ import { Hero } from './Hero'
 import OurAssociation from './OurAssociation'
 import Testimonials from './Testimonials'
 import OurFounder from './OurFounder'
+import LoanBenefits from './LoanBenefits'
 
 export const Home = () => {
   return (
@@ -12,6 +13,7 @@ export const Home = () => {
       <OurFounder/>
     <OurAssociation/>
     <Testimonials/>
+    <LoanBenefits/>
   
     </>
   )
