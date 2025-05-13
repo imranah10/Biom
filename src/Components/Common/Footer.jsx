@@ -20,7 +20,8 @@ function Footer() {
                 alt="Logo"
                 className="h-8 mr-3"
               />
-              <span className="text-2xl font-semibold">ऋण Samadhan</span>
+
+              <span className="text-2xl font-semibold">Biom Business Consultants Pvt. Ltd.</span>
             </a>
             <p className="text-sm text-gray-400">
               Your trusted partner for financial consultation and loan guidance.

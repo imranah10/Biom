@@ -139,7 +139,6 @@ export default function About() {
       {/* Final Call-to-Action */}
       <div className="mt-20 bg-[#1a1f2b] text-white rounded-2xl shadow-lg p-8 sm:p-10 text-center">
         <div className="flex items-center justify-center mb-4">
-          <FaRocket className="text-yellow-400 w-6 h-6 mr-2" />
           <h2 className="text-2xl sm:text-3xl font-bold text-yellow-400">Let’s Grow Together</h2>
         </div>
         <p className="text-base sm:text-lg text-gray-200 max-w-3xl mx-auto mb-6">

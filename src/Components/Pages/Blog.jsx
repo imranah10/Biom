@@ -41,7 +41,7 @@ const Blog = () => {
 
   return (
     <>
-      <h1 className="text-3xl font-bold text-center text-yellow-600 mb-8 py-5 bg-amber-50 font-serif ">Our Blogs</h1>
+      <h1 className="text-3xl font-bold text-center text-yellow-600 mb-8 py-5 bg-amber-50 font-serif">Our Blogs</h1>
 
       {/* Blog Section */}
       <section className="py-16 px-4 max-w-7xl mx-auto">
